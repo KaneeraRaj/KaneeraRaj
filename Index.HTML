@@ -67,6 +67,40 @@
         li a :hover {
             color: rgb(0, 4, 255);
         }
+
+        header {
+            grid-area: header;
+        }
+
+        nav {
+            grid-area: nav;
+        }
+
+        #intro {
+            grid-area: intro;
+        }
+
+        #main section {
+            grid-area: main section;
+        }
+
+        #bestseller {
+            grid-area: bestseller;
+        }
+
+        footer {
+            grid-area: footer;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            grid-template-areas:
+                "header header header header intro"
+                "nav nav nav nav intro"
+                "main-section main-section main-section main-section bestseller"
+                "footer footer footer footer footer"
+        }
     </style>
 
     <head>

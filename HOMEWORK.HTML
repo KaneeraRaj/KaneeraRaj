@@ -1,0 +1,23 @@
+<HTML>
+<HEAD>
+  <STYLE>
+    #myElement{
+    border: 1px black;
+    width: 100px;
+    height: 100px;
+    }
+  </STYLE>  
+</HEAD>
+<body>
+    <h2>Change the Fontcolor</h2>
+    <div id="myElement">Hello World</div>
+    <br>
+    <button type="button" onclick="changeStyle()">Click Me</button>
+    <script>
+        function changeStyle(){
+            var element=document.getElementById("myElement");
+            element.style.color="#FF000";
+        }
+        </script>
+        </body>
+</HTML>

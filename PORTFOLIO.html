@@ -1,0 +1,59 @@
+<<html>
+    <head>
+<title>About Myself</title>
+    </head>
+<style>
+body{
+text-align: center;
+}
+nav{
+    background-color: rgb(241, 195, 110);
+    padding: 10px;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+li{
+    float: left;
+    padding: 10px 20;
+}
+li a {
+    display: block;
+}
+li a:hover{
+    background-color: rgb(248, 19, 95);
+}
+</style>
+<body>
+    <nav>
+        <ul>
+<li> <a href="project.html">Home </a></li>
+<li> <a href="my hobbies.html">About us </a></li>
+<li> <a href="DEMO.html">Contact us </a></li>
+        </ul>
+        </nav>
+<h1>About Myself</h1>
+<p><strong>Hello everyone, I am gonna share all about myself through this website. All about my hobbies,likes,dislikes and studies.</strong></p>
+<img src="myself.png">
+<br/>
+<button onclick="me();">
+    Know about me!
+</button> 
+<p id="me-info" ></p>
+<img src="lulla pullla khullla chulllA.jpg" alt="likes and dislikes">
+<br/>
+<button onclick="likesanddislikes();">Likes and dislikes</button>
+<p id="likes and dislikes-info"></p>
+<script>
+    function me(){
+document.getElementById("me-info")
+.innerHTML="My name is Kaneera Raj and I study in Carmel School bhagalpur,India.I am not sharing my parents name as it is not safe."}
+    function likesanddislikes () {
+    document.getElementById("likes and dislikes-info")
+   .innerHTML="I like kaju katli,rasgule and sonpapdi in desserts. I like to play mountain and water,cards and pitto(a traditional indian game)beside this I love reading Roald Dhal storybooks"}
+    </script>
+</body>
+</html>

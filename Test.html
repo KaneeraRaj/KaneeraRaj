@@ -1,0 +1,66 @@
+<<html>
+<head>
+<title>
+    Navbar
+</title>
+<style>
+    body{
+margin: 0;
+font-family: Arial, Helvetica, sans-serif;
+    }
+    .topnav{
+        overflow: hidden;
+        background-color: yellow;
+    }
+    .topnav a{
+    float: left;
+    color: rgb(35, 0, 233);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: dotted;
+    font-size: 17px;
+    }
+    .topnav a:hover{
+background-color: gold;
+color: black;
+    }
+    .topnav a.active{
+        background-color: rgb(195, 36, 195);
+        color: black;
+    }
+</style>
+</head>
+<body>
+<div class="topnav">
+    <a class="active" href="#home">Home</a>
+    <a href="#">About Us</a>
+    <a href="#">Gallery</a>
+    <a href="#">Contact Us</a>
+
+ <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+    <div class="carousel-item active"></div>
+    </div>
+ </div>
+   <img class="mySlides"  src="pic.jpg"  style="height:500px;">
+   <img class="mySlides" src="honey didi.jpg" style="height: 500px;">
+    </section>
+    <script>
+        var myIndex = 0;
+        carousel();
+function carousel () {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++){
+    x [i].style.display ="none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex=1}
+    x[myIndex-1].style.display ="block";
+    setTimeout(carousel,3000)
+}
+    </script>
+    </div>
+</div>
+</body>
+</html>
